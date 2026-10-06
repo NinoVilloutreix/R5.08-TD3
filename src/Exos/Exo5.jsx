@@ -13,7 +13,7 @@ export default function App() {
   const toggleUser = (id) => {
     console.log(id);
     setUsers((prev) => prev.map((user)=>
-      user.id === id ? {...user, !user.active} : user,),)}
+      user.id === id ? {...user, active : !user.active} : user,),);}
   };
 
   return (
