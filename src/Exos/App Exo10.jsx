@@ -1,13 +1,12 @@
 import { useState } from "react";
 
 function EditableCard({ value, onSave }) {
-  // States LOCAUX : ils ne concernent que ce composant
+
   const [isEditing, setIsEditing] = useState(false);
   const [draft, setDraft] = useState(value); // brouillon
 
   const startEditing = () => {
-    // useState(value) ne lit value qu'au 1er rendu : on resynchronise ici,
-    // sinon « Annuler » puis « Modifier » ressortirait l'ancien brouillon
+
     setDraft(value);
     setIsEditing(true);
   };
