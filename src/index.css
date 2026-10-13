@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-bg: var(--clr-bg);
-  --color-fg: var(--clr-fg);
+  --color-white : var(--clr-white);
+  --color-dark: var(--clr-dark);
+  --color-primary: var(--clr-primary);
+  --color-secondary: var(--clr-secondary);
+  --font-fira : var(--font-fira);
 }
 
 @layer base {
@@ -10,14 +13,11 @@
     /* Tokens primitifs */
     --clr-white: #ffffff;
     --clr-dark: #1a1a1a;
+    --clr-primary : #e60012;
+    --clr-secondary : #fa3931;
 
-    /* Tokens sémantiques */
-    --clr-fg: var(--clr-dark);
-    --clr-bg: var(--clr-white);
+    --font-fira: "Fira Sans"
+
   }
 
-  .dark {
-    --clr-fg: var(--clr-white);
-    --clr-bg: var(--clr-dark);
-  }
 }
